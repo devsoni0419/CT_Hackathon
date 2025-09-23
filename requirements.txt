@@ -1,0 +1,14 @@
+scikit-learn
+pandas
+numpy
+ipykernel
+flask
+matplotlib
+seaborn
+openpyxl
+Flask
+plotly
+xgboost
+kneed
+nltk
+tensorflow
