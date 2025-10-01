@@ -12,3 +12,7 @@ xgboost
 kneed
 nltk
 tensorflow
+streamlit
+scikeras
+opencv-python
+opencv-contrib-python
