@@ -16,3 +16,4 @@ streamlit
 scikeras
 opencv-python
 opencv-contrib-python
+librosa
