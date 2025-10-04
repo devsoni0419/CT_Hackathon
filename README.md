@@ -1,15 +1,31 @@
-# CT_Hackathon
-## Team CodeXplore (T015)
-## Team members:
-Dev Soni(Team Leader),
-Sunny Yadav,
-Rishi Bisht,
-Mukesh Yadav,
-Vivek Sharma
+# Team CodeXplore (T-015)
+## Team Members:
+Dev Soni(Team Leader) (Backend + Frontend)
+Rishi Bisht (Frontend + Backend)
+Sunny Yadav (Data Processing+Backend)
+Mukesh Yadav (Data Acquisition + Data Processing)
+Vivek Sharma (Frontend)
 
 # Student Dropout Prediction System 🎓
 
 A Streamlit-based web application that predicts student dropout risks using machine learning and automatically sends email alerts to mentors for high-risk students.
+
+## Problem Statement
+
+### Data Science & AI for Social Good: AI-based Drop-out Prediction and Counseling System
+
+**Background:**  
+By the time term-end marks reveal failures, many struggling students have disengaged beyond recovery. Counsellors and mentors need a mechanism that surfaces risk indicators—failing attendance, high number of attempts exhausted to pass a particular subject, reducing test scores—weeks earlier.
+
+**The Challenge:**  
+Attendance percentages live in one spreadsheet, test results in another, and fee-payment data in a third. No single view exists to signal that a learner is slipping in multiple areas simultaneously. Commercial analytics platforms promise predictive insights but demand funds and maintenance beyond the reach of public institutes. 
+
+A simpler, transparent approach would merge existing spreadsheets, apply clear logic to colour-code risk, and notify mentors on a predictable schedule. Such a system must be easy to configure, require minimal training, and empower educators—not replace their judgment. 
+
+By focusing on data fusion and timely alerts rather than complex algorithms, the institute can intervene early and reduce drop-out rates without fresh budget lines. This challenge epitomises the hackathon spirit: take what is already present, integrate it cleverly, and produce meaningful impact using machine learning.
+
+**Expected Solution:**  
+A consolidated digital dashboard that automatically ingests attendance, assessment scores, and other student-related data; applies clear, rule-based thresholds to identify at-risk students; highlights them in an intuitive visual format; and dispatches regular notifications to mentors and guardians, ensuring early, data-driven intervention achieved entirely through suitable machine learning approaches.
 
 ## Features
 
@@ -62,32 +78,93 @@ project/
 └── README.md            # This file
 ```
 
-## Setup
+## Quick Start Guide
 
-### 1. Model File
+### Step 1: Clone or Download the Project
 
-Ensure you have a trained model file named `model.pkl` in the same directory as the application. This file should contain a trained Random Forest classifier.
+```bash
+# If using git
+git clone <repository-url>
+cd student-dropout-prediction
 
-### 2. Email Configuration
+# Or download and extract the ZIP file
+```
 
-Update the email credentials in the code (line with `yagmail.SMTP`):
+### Step 2: Create Virtual Environment (Recommended)
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+If you don't have a requirements.txt file, install manually:
+
+```bash
+pip install streamlit pandas numpy plotly yagmail scikit-learn
+```
+
+### Step 4: Configure Email Settings
+
+Open `app.py` and update the email configuration (around line 155):
 
 ```python
 yag = yagmail.SMTP("your_email@gmail.com", "your_app_password")
 ```
 
-**Important**: Use Gmail App Password, not your regular password:
-1. Enable 2-Factor Authentication on your Google account
-2. Generate an App Password at: https://myaccount.google.com/apppasswords
-3. Use the generated 16-character password in the code
+**Setting up Gmail App Password:**
 
-## Usage
+1. Go to your Google Account: https://myaccount.google.com
+2. Select **Security** from the left menu
+3. Enable **2-Step Verification** (if not already enabled)
+4. Go to **App Passwords**: https://myaccount.google.com/apppasswords
+5. Select app: **Mail**
+6. Select device: **Other (Custom name)** → Enter "Student Dropout System"
+7. Click **Generate**
+8. Copy the 16-character password (format: `xxxx xxxx xxxx xxxx`)
+9. Paste it in the code (remove spaces): `"your_app_password"`
 
-### 1. Start the Application
+### Step 5: Add the Model File
+
+Ensure `model.pkl` is in the project root directory:
+
+```
+project/
+├── app.py
+├── model.pkl          ← Required file
+├── requirements.txt
+└── README.md
+```
+
+If you need to train a model, you'll need a training script (not included). The model should be a trained scikit-learn Random Forest classifier saved using pickle.
+
+### Step 6: Run the Application
 
 ```bash
 streamlit run app.py
 ```
+
+The application will open automatically in your default browser at `http://localhost:8501`
+
+If it doesn't open automatically, navigate to the URL shown in your terminal.
+
+## Usage
+
+### 1. Access the Application
+
+Open your browser and go to `http://localhost:8501`
 
 ### 2. Upload Student Data
 
@@ -162,8 +239,3 @@ The system automatically sends email notifications to mentors when their student
 - [ ] Add historical tracking
 - [ ] Create admin dashboard
 - [ ] Add model retraining capability
-
-
-
-
-
