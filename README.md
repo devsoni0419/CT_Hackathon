@@ -1,7 +1,7 @@
 # CT_Hackathon
 ## Team CodeXplore (T015)
 ## Team members:
-Dev Soni,
+Dev Soni(Team Leader),
 Sunny Yadav,
 Rishi Bisht,
 Mukesh Yadav,
