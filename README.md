@@ -1,5 +1,11 @@
-# CT_Hackathon
-Team CodeXplore
+## CT_Hackathon
+# Team CodeXplore (T015)
+# Team members:
+Dev Soni
+SUnny Yadav
+Rishi Bisht
+Mukesh Yadav
+Vivek Sharma
 
 # Student Dropout Prediction System 🎓
 
@@ -157,15 +163,7 @@ The system automatically sends email notifications to mentors when their student
 - [ ] Create admin dashboard
 - [ ] Add model retraining capability
 
-## License
 
-This project is provided as-is for educational purposes.
 
-## Contact
 
-For questions or support, please contact your system administrator.
 
----
-
-**Version**: 1.0  
-**Last Updated**: October 2025
