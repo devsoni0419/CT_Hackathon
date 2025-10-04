@@ -1,8 +1,8 @@
-## CT_Hackathon
-# Team CodeXplore (T015)
-# Team members:
+# CT_Hackathon
+## Team CodeXplore (T015)
+## Team members:
 Dev Soni
-SUnny Yadav
+Sunny Yadav
 Rishi Bisht
 Mukesh Yadav
 Vivek Sharma
