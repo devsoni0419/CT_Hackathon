@@ -1,6 +1,7 @@
 # Team CodeXplore (T-015)
 ## Team Members:
-Dev Soni(Team Leader) (Backend + Frontend)                                                                                                            
+Dev Soni(Team Leader) (Backend + Frontend)
+
 Rishi Bisht (Frontend + Backend)
 
 Sunny Yadav (Data Processing+Backend)
