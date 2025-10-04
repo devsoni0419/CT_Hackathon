@@ -1,10 +1,10 @@
 # CT_Hackathon
 ## Team CodeXplore (T015)
 ## Team members:
-Dev Soni
-Sunny Yadav
-Rishi Bisht
-Mukesh Yadav
+Dev Soni,
+Sunny Yadav,
+Rishi Bisht,
+Mukesh Yadav,
 Vivek Sharma
 
 # Student Dropout Prediction System 🎓
